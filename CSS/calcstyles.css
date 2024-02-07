@@ -1,4 +1,4 @@
-@import "/Calculator/stylespages/variabless/colors.css";
+@import "variabless/colors.css";
 
 * {
     box-sizing: border-box;
@@ -104,5 +104,79 @@ img {
     border-radius: 50px;
     margin-top: 25px;
     margin-bottom: 5px;
+}
+
+@media (min-width:768px) {
+
+    #calculator_body {
+        width: 350px;
+        height:560px;
+        background-color: var(--clr-main-bg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 25px;
+        /*transform:rotate(10deg)*/
+        box-shadow: 0 0 14px 14px burlywood;
+    }
+    
+    #output_text_container {
+        display:flex;
+        justify-content: flex-end;
+        color: var(--clr-text);
+        font-size: 70px;
+        margin-right: 28px;
+        margin-top: 14px;
+        align-self: flex-end;
+    }
+
+    .keypadrow {
+        display: flex;
+        gap: 14px;
+        margin: 7px 14px 7px 14px;
+    }
+    
+    .button, .grey_button, .orange_button {
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        font-weight: 300;
+        padding-bottom: 4.2px;
+    } 
+
+    .big_button {
+        height: 70px;
+        width:154px;
+        border-radius: 50px;
+        background-color: var(--clr-button-bg-numb);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 35px;
+        font-weight: 300;
+        padding-left:26.6px;
+        color: var(--clr-text);
+    }
+    
+    img {
+        width: 35px;
+    }
+    
+    #percent_symbol {
+        width: 28px;
+    }
+    
+    #slider_bar {
+        width:33%;
+        height: 2.8px;
+        border-bottom: 2.8px solid var(--clr-text);
+        border-radius: 50px;
+        margin-top: 35px;
+        margin-bottom: 7px;
+    }
 }
 

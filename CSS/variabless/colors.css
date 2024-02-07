@@ -1,9 +1,9 @@
 :root {
     --clr-main-bg:black;
     --clr-text:rgb(230, 225, 225);
-    --clr-button-bg-numb:rgb(46, 42, 42);
-    --clr-button-bg-top:grey;
+    --clr-button-bg-numb:rgb(51,51,51);
+    --clr-button-bg-top:rgb(165,165,165);
     --clr-text-top:black;
-    --clr-button-bg-right:rgba(255, 166, 0, 0.839);
+    --clr-button-bg-right:rgb(255,159,9);
     --clr-body-bg:blanchedalmond;
 }
