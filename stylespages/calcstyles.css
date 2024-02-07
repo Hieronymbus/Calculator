@@ -1,0 +1,108 @@
+@import "/Calculator/stylespages/variabless/colors.css";
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:system-ui;
+    font-weight:200;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--clr-body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator_body {
+    width: 250px;
+    height:400px;
+    background-color: var(--clr-main-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    /*transform:rotate(10deg)*/
+    box-shadow: 0 0 10px 10px burlywood;
+}
+
+#output_text_container {
+    display:flex;
+    justify-content: flex-end;
+    color: var(--clr-text);
+    font-size: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+#input_keypad {
+    display: flex;
+    flex-direction: column;
+}
+
+.keypadrow {
+    display: flex;
+    gap: 10px;
+    margin: 5px 10px 5px 10px;
+}
+
+.button, .grey_button, .orange_button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 300;
+    padding-bottom: 3px;
+} 
+
+.button {
+    background-color: var(--clr-button-bg-numb);
+    color:var(--clr-text);
+}
+
+.grey_button {
+    background-color: var(--clr-button-bg-top);
+}
+
+.orange_button {
+    background-color: var(--clr-button-bg-right);
+    color: var(--clr-text);
+}
+
+.big_button {
+    height: 50px;
+    width:110px;
+    border-radius: 50px;
+    background-color: var(--clr-button-bg-numb);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 300;
+    padding-left:19px;
+    color: var(--clr-text);
+}
+
+img {
+    width: 25px;
+}
+
+#percent_symbol {
+    width: 20px;
+}
+
+#slider_bar {
+    width:33%;
+    height: 2px;
+    border-bottom: 2px solid var(--clr-text);
+    border-radius: 50px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
