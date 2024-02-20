@@ -60,6 +60,7 @@ body {
     font-size: 25px;
     font-weight: 300;
     padding-bottom: 3px;
+    
 } 
 
 .button {
@@ -88,6 +89,15 @@ body {
     font-weight: 300;
     padding-left:19px;
     color: var(--clr-text);
+}
+
+.button:hover, .grey_button:hover, .orange_button:hover,.big_button:hover {
+    cursor:pointer;
+    box-shadow: 0 0 5px 3px whitesmoke;
+}
+
+.button:active, .grey_button:active, .orange_button:active,.big_button:active{
+box-shadow: 0 0 5px 10px whitesmoke ;
 }
 
 img {
