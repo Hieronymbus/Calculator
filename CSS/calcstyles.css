@@ -26,7 +26,7 @@ body {
     align-items: center;
     border-radius: 25px;
     /*transform:rotate(10deg)*/
-    box-shadow: 0 0 10px 10px burlywood;
+    box-shadow: 0 0 10px 10px var(--clr-body-bg);
 }
 
 #output_text_container {
@@ -93,11 +93,11 @@ body {
 
 .button:hover, .grey_button:hover, .orange_button:hover,.big_button:hover {
     cursor:pointer;
-    box-shadow: 0 0 5px 3px whitesmoke;
+    box-shadow: 0 0 5px 3px var(--clr-text);
 }
 
 .button:active, .grey_button:active, .orange_button:active,.big_button:active{
-box-shadow: 0 0 5px 10px whitesmoke ;
+box-shadow: 0 0 5px 10px var(--clr-text);
 }
 
 img {
@@ -128,7 +128,7 @@ img {
         align-items: center;
         border-radius: 25px;
         /*transform:rotate(10deg)*/
-        box-shadow: 0 0 14px 14px burlywood;
+        box-shadow: 0 0 14px 14px var(--clr-shadow);
     }
     
     #output_text_container {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/calcstyles.css">
     <title>Calculator Project</title>
+    <script src="JS/calcScript.js"></script>
 </head>
 <body>
     <main id="calculator_body">
@@ -14,7 +15,7 @@
         </div>
         <div id="input_keypad">
             <div class="keypadrow">
-                <button class="grey_button">C</button>
+                <button class="grey_button" onclick="clearDisplay()">C</button>
                 <button class="grey_button"><img src="assets/plus-minus.png"></button>
                 <button class="grey_button"><img id="percent_symbol" src="assets/discount.png"></button>
                 <button class="orange_button">&#xF7</button>
