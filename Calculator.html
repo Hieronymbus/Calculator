@@ -11,37 +11,37 @@
 <body>
     <main id="calculator_body">
         <div id="output_text_container">
-            1,984
+            0
         </div>
         <div id="input_keypad">
             <div class="keypadrow">
                 <button class="grey_button" onclick="clearDisplay()">C</button>
-                <button class="grey_button"><img src="assets/plus-minus.png"></button>
-                <button class="grey_button"><img id="percent_symbol" src="assets/discount.png"></button>
-                <button class="orange_button">&#xF7</button>
+                <button class="grey_button" onclick=""><img src="assets/plus-minus.png"></button>
+                <button class="grey_button" onclick="inputButton('%')"><img id="percent_symbol" src="assets/discount.png"></button>
+                <button class="orange_button" onclick="inputButton('/')">&#xF7</button>
             </div>
             <div class="keypadrow">
-                <button class="button">7</button>
-                <button class="button">8</button>
-                <button class="button">9</button>
-                <button class="orange_button">&times</button>
+                <button class="button" onclick="inputButton('7')">7</button>
+                <button class="button" onclick="inputButton('8')">8</button>
+                <button class="button" onclick="inputButton('9')">9</button>
+                <button class="orange_button" onclick="inputButton('*')">&times</button>
             </div>
             <div class="keypadrow">
-                <button class="button">4</button>
-                <button class="button">5</button>
-                <button class="button">6</button>
-                <button class="orange_button"> &#x2212</button>
+                <button class="button" onclick="inputButton('4')">4</button>
+                <button class="button" onclick="inputButton('5')">5</button>
+                <button class="button" onclick="inputButton('6')">6</button>
+                <button class="orange_button" onclick="inputButton('-')"> &#x2212</button>
             </div>
             <div class="keypadrow">
-                <button class="button">1</button>
-                <button class="button">2</button>
-                <button class="button">3</button>
-                <button class="orange_button">+</button>
+                <button class="button" onclick="inputButton('1')">1</button>
+                <button class="button" onclick="inputButton('2')">2</button>
+                <button class="button" onclick="inputButton('3')">3</button>
+                <button class="orange_button" onclick="inputButton('+')">+</button>
             </div>
             <div  class="keypadrow">
-                <button class="big_button">0</button>
-                <button class="button">.</button>
-                <button class="orange_button">=</button> 
+                <button class="big_button" onclick="inputButton('0')">0</button>
+                <button class="button" onclick="inputButton('.')">.</button>
+                <button class="orange_button" onclick="calculate()">=</button> 
             </div>
         </div>
         <div id="slider_bar">
